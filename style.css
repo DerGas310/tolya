@@ -1,0 +1,98 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+h1{
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 10vw;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+#chernotap{
+  border: 0;
+  border-radius: 75vw;
+  width: 75vw;
+  padding: 0;
+  color: rgba(0, 0, 0, 0);
+}
+
+#chernotap img{
+  border: 0;
+  border-radius: 75vw;
+  width: 75vw;
+  padding: 0;
+}
+#thiding{
+  flex-direction: column;
+  margin-top: 3vh;
+  height: 55vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header button{
+  height: 10vh;
+  width: 45vw;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 3px black solid;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: medium;
+}
+
+#stepantap{
+  height: 5vh;
+  width: 50vw;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 3px #0048ff solid;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: larger;
+}
+
+#mhiding{
+  margin-top: 10vh;
+  width: 90vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  
+  justify-self: center;
+}
+.wrap{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 90vw;
+}
+.wrap button{
+  width: 40vw;
+}
+#mhiding button{
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: small;
+  border: 0;
+  border-bottom: 3px #000000 solid;
+}
