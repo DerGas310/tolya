@@ -2,6 +2,7 @@ body{
   width: 100vw;
   height: 100vh;
   margin: 0;
+  background-color: white;
 }
 
 h1{
@@ -9,6 +10,7 @@ h1{
   font-weight: 700;
   font-style: bold;
   font-size: 10vw;
+  color: #000000;
 }
 
 header{
@@ -16,6 +18,7 @@ header{
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  color: #000000;
 }
 
 #chernotap{
@@ -23,7 +26,7 @@ header{
   border-radius: 75vw;
   width: 75vw;
   padding: 0;
-  color: rgba(0, 0, 0, 0);
+  color: #000000;
 }
 
 #chernotap img{
@@ -44,6 +47,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #000000;
 }
 
 header button{
@@ -56,18 +60,27 @@ header button{
   font-weight: 700;
   font-style: bold;
   font-size: medium;
+  color: #000000;
 }
 
 #stepantap{
-  height: 5vh;
+  height: 9vh;
   width: 50vw;
-  border: 0;
   background-color: rgba(255, 255, 255, 0);
-  border-bottom: 3px #0048ff solid;
   font-family: "Comfortaa", sans-serif;
   font-weight: 700;
   font-style: bold;
   font-size: larger;
+}
+
+.inactive{
+  border: 0;
+  border-bottom: 3px #313131 solid;
+}
+
+.active{
+  border: 0;
+  border-bottom: 3px #0048ff solid;
 }
 
 #mhiding{
@@ -95,4 +108,11 @@ header button{
   font-size: small;
   border: 0;
   border-bottom: 3px #000000 solid;
+}
+
+#chernoskolko{
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: medium;
 }

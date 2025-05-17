@@ -30,17 +30,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Начальное значение для снятия черногузов
     let deductionFactor = 20;
-    let deductionMultiplier = 1.3;
+    let deductionMultiplier = 1.5;
     let deductionFactor2 = 30;
-    let deductionMultiplier2 = 1.5;
+    let deductionMultiplier2 = 1.6;
     let deductionFactor3 = 50;
     let deductionMultiplier3 = 2;
     let deductionFactor4 = 60;
-    let deductionMultiplier4 = 2;
+    let deductionMultiplier4 = 2.2;
     let deductionFactor5 = 50;
     let deductionMultiplier5 = 2.2;
     let deductionFactor6 = 75;
-    let deductionMultiplier6 = 2.2;
+    let deductionMultiplier6 = 2.5;
     let vsek = 0
 
     // Объявляем переменные для управления временем Степана
@@ -155,6 +155,8 @@ sttt.addEventListener('click', () => {
 stepantap.addEventListener('click', () => {
     const currentTime = Date.now();
     if (!lastStepanTime || (currentTime - lastStepanTime) >= stepanCooldownTime) {
+        stepantap.classList.add("inactive")
+        stepantap.classList.remove("active")
         stepaned = true;
         lastStepanTime = currentTime;
         console.log("Степан включен:", stepaned);
@@ -162,7 +164,11 @@ stepantap.addEventListener('click', () => {
         setTimeout(() => {
             stepaned = false;
             console.log("Степан выключен:", stepaned);
+            stepantap.classList.add("active")
         }, stttv);
+        setTimeout(() => {
+            stepantap.classList.remove("inactive")
+        }, stepanCooldownTime-stttv)
     } else {
         alert("Степан еще не готов к использованию.");
         console.log("Степан еще не готов к использованию.");
