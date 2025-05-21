@@ -2,7 +2,7 @@
   "name": "tapo4ki",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server.js"
+    "start": "node api/index.js"
   },
   "dependencies": {
     "@fastify/formbody": "^8.0.2",
